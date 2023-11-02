@@ -56,10 +56,15 @@ Support format:
 ### Annotation
     
 **Definition:**
-An annotation is 
+An annotation is a region of interest that is drawn by users/pathologists.
 **Schema:**
 
 **functionalities:**
+1. add an annotation
+2. read an annotation
+3. update an annotation's shape
+4. update an annotation's note
+5. remove an annotation
 
 ### Evaluation
 
@@ -68,25 +73,37 @@ An annotation is
 **Schema:**
 
 **functionalities:**
+1. add an evaluation
+2. read an evaluation
+3. update an annotation
+4. remove an annotation
 
 ### Specialty
 
 **Definition:**
+A medical specialty is a branch of medical practice that focuses on a specific group of patients, diseases, skills, or philosophy. 
 
 **Schema:**
 
 **functionalities:**
+1. add a specialty
+2. read a specialty
+3. update a specialty
+4. remove a specialty
 
 ### User
 **Definition:** 
+A user is an entity that can complete studies or manage studies. Usually, a user could be a pathologist or/and system administrator.
 
 **Schema:**
 
 **functionalities:**
-1. create users
-2. read user profile
-3. update user profile
-4. delete user
+1. register users
+2. activate users
+3. deactivate users
+4. read user profile
+5. update user profile
+6. delete user
 
 ### ER Diagram
 ```mermaid
@@ -164,6 +181,14 @@ erDiagram
     Slides ||--o{ Evaluations: has
     Users  o|--o| Evaluations: evalute
 ```
-Studies:
+
+## User Interfaces
+
+### Study Management
+
+## UI component
+
+### Hier
+Definition
 
 
